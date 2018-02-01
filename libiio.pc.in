@@ -1,0 +1,10 @@
+prefix=@prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libiio
+Description: IPOL Library Image Input-Output.
+Version: @IIO_VERSION@
+Libs: -L${libdir} -liio
+Libs.private: @LIBS@
+Cflags: -I${includedir}

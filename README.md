@@ -8,7 +8,7 @@
 * Licence   : GPL v3+, see GPLv3.txt
 * Based on the 2010 implementation of DCT denoising by:
   Guoshen Yu <yu@cmap.polytechnique.fr> and Guillermo Sapiro <guille@umn.edu>
-* Latest version available at: https://github.com/gfacciol/DCTdenoising
+* Latest version available at: https://github.com/zvezdochiot/libiio
 
 # OVERVIEW
 

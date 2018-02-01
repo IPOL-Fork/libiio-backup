@@ -1,5 +1,12 @@
 cmake_minimum_required(VERSION 2.8)
 project(libiio)
+set(MAJOR_VERSION 0)
+set(MINOR_VERSION 20180201)
+set(IIO_VERSION ${MAJOR_VERSION}.${MINOR_VERSION})
+set(prefix ${CMAKE_INSTALL_PREFIX})
+set(libdir ${CMAKE_INSTALL_PREFIX}/lib)
+set(includedir ${CMAKE_INSTALL_PREFIX}/include)
+set(LIBS "-ljpeg -lpng -ltiff -lz")
 
 # The build type "Release" adds some optimizations
 if (NOT CMAKE_BUILD_TYPE)
@@ -58,4 +65,10 @@ set(SOURCE_FILES
 set_property(SOURCE iio.c PROPERTY COMPILE_FLAGS "-Wno-unused-variable -Wno-unused-parameter -Wno-pointer-sign -Wno-parentheses -Wno-deprecated-declarations -Wno-unused-function")
 
 add_library(iio SHARED ${SOURCE_FILES})
-set_target_properties(iio PROPERTIES VERSION 0.20171011 SOVERSION 0)
+set_target_properties(iio PROPERTIES VERSION ${IIO_VERSION} SOVERSION ${MAJOR_VERSION})
+
+configure_file(libiio.pc.in libiio.pc @ONLY)
+
+install(TARGETS iio LIBRARY DESTINATION lib)
+install(FILES iio.h DESTINATION include)
+install(FILES libiio.pc DESTINATION lib/pkgconfig)

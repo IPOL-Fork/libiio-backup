@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(libiio)
 set(MAJOR_VERSION 0)
-set(MINOR_VERSION 20180201)
+set(MINOR_VERSION 20191003)
 set(IIO_VERSION ${MAJOR_VERSION}.${MINOR_VERSION})
 set(prefix ${CMAKE_INSTALL_PREFIX})
 set(libdir ${CMAKE_INSTALL_PREFIX}/lib)

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(libiio)
 set(MAJOR_VERSION 0)
-set(MINOR_VERSION 20191003)
+set(MINOR_VERSION 20220720)
 set(IIO_VERSION ${MAJOR_VERSION}.${MINOR_VERSION})
 set(prefix ${CMAKE_INSTALL_PREFIX})
 set(libdir ${CMAKE_INSTALL_PREFIX}/lib)
@@ -58,8 +58,8 @@ include_directories (SYSTEM ${TIFF_INCLUDE_DIR} ${JPEG_INCLUDE_DIR} ${PNG_INCLUD
 link_libraries (${TIFF_LIBRARIES} ${JPEG_LIBRARIES} ${PNG_LIBRARIES})
 
 set(SOURCE_FILES
-    iio.c
-    iio.h
+    src/iio.c
+    src/iio.h
     )
 
 set_property(SOURCE iio.c PROPERTY COMPILE_FLAGS "-Wno-unused-variable -Wno-unused-parameter -Wno-pointer-sign -Wno-parentheses -Wno-deprecated-declarations -Wno-unused-function")

@@ -1,6 +1,14 @@
-% IPOL Library Image Input-Output.
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/IPOL-Fork/libiio-backup)
+![GitHub Release Date](https://img.shields.io/github/release-date/IPOL-Fork/libiio-backup)
+![GitHub repo size](https://img.shields.io/github/repo-size/IPOL-Fork/libiio-backup)
+![GitHub all releases](https://img.shields.io/github/downloads/IPOL-Fork/libiio-backup/total)
+![GitHub](https://img.shields.io/github/license/IPOL-Fork/libiio-backup)
 
-# ABOUT
+# LibIIO
+
+Library Image Input-Output.
+
+## ABOUT
 
 * Author : Nicola Pierazzo   <nicolapierazzo@gmail.com>
 * Author : Gabriele Facciolo <gfacciol@gmail.com>
@@ -10,12 +18,12 @@
   Guoshen Yu <yu@cmap.polytechnique.fr> and Guillermo Sapiro <guille@umn.edu>
 * Latest version available at: https://github.com/zvezdochiot/libiio
 
-# OVERVIEW
+## OVERVIEW
 
 This source code provides an implementation of the "Image Input-Output"
 described in the IPOL article: http://www.ipol.im/
 
-# UNIX/LINUX/MAC USER GUIDE
+## UNIX/LINUX/MAC USER GUIDE
 
 The code is compilable on Unix/Linux and Mac OS. 
 
@@ -37,7 +45,7 @@ Usage:
     mkdir build; cd build;
     cmake ..; make;
 
-# ABOUT THIS FILE
+## ABOUT THIS FILE
 Copying and distribution of this file, with or without modification,
 are permitted in any medium without royalty provided the copyright
 notice and this notice are preserved.  This file is offered as-is,
